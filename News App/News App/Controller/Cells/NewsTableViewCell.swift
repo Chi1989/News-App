@@ -28,17 +28,6 @@ class NewsTableViewCell: UITableViewCell {
         label.font = UIFont.systemFont(ofSize: 18, weight: .regular)
         return label
     }()
-    
-    lazy var imageUrl: UIImageView = {
-        let image = UIImageView()
-        image.translatesAutoresizingMaskIntoConstraints = false
-        image.contentMode = .scaleAspectFill
-        image.clipsToBounds = true
-        image.layer.cornerRadius = 8
-        image.layer.masksToBounds = true
-        image.backgroundColor = .red
-        return image
-    }()
 
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
